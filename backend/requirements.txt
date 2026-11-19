@@ -1,0 +1,32 @@
+# Agentic AI Research Assistant — Python dependencies
+# Versions below are the ones this build was verified against
+# (Python 3.13.16, Linux sandbox; Windows uses the same interpreter generation, 3.11+).
+# Install:  pip install -r requirements.txt
+
+# ---- Core web app (required) ----
+fastapi==0.162.0
+uvicorn[standard]==0.54.0
+pydantic==2.14.1
+pydantic-settings==2.16.2
+SQLAlchemy==2.1.6
+aiosqlite==0.22.1
+greenlet==3.5.6              # required by SQLAlchemy asyncio bridge
+httpx==0.28.1
+python-docx==1.1.2
+python-multipart==0.0.32
+
+# ---- Agent orchestration (Lab 7) ----
+langgraph==1.2.18
+typing-extensions>=4.12
+
+# ---- MCP tool connector (Lab 5) ----
+mcp==2.3.0
+
+# ---- Testing ----
+pytest==9.0.3
+pytest-asyncio==1.4.1
+anyio==4.15.1
+
+# ---- Optional: only if you switch DATABASE_URL to PostgreSQL ----
+# asyncpg==0.30.0
+# pgvector==0.3.6

@@ -1,0 +1,100 @@
+
+# ==========================================
+# RESEARCHOS - ROOT GITIGNORE
+# ==========================================
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+!.env.template
+
+# Python virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Python cache and compiled files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Python testing and coverage
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+
+# Logs
+*.log
+logs/
+
+# Local databases and runtime data
+*.db
+*.sqlite
+*.sqlite3
+*.db-shm
+*.db-wal
+data/
+instance/
+
+# Generated exports and reports
+exports/
+generated/
+tmp/
+temp/
+
+# Node dependencies
+node_modules/
+
+# Frontend build outputs
+dist/
+build/
+
+# Generated frontend assets served by backend
+backend/static/ui/
+
+# Tool caches
+.cache/
+.mypy_cache/
+.ruff_cache/
+.pyright/
+.ipynb_checkpoints/
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Operating system files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Git backup and patch files
+*.orig
+*.rej
+*.bak
+
+# Large model and ML files
+*.pt
+*.pth
+*.onnx
+*.safetensors
+*.gguf
+*.h5
+*.keras
+
+# Archives and temporary packages
+*.zip
+*.tar
+*.gz
+*.7z
+
+# Local scratch files
+scratch/
